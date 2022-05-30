@@ -33,7 +33,7 @@ header {
 }
 
 .top1 {
-    width: 500px;
+    width: 31.25em; /* 500px / 16 */
     margin-left: 0.9375em;       /* 15px / 16 */
 }
 
