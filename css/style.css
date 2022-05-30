@@ -28,13 +28,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    
-    
+    align-items: center;
+    /*4.975em;*/
 }
 
 .top1 {
     width: 31.25em; /* 500px / 16 */
-    margin-left: 0.9375em;       /* 15px / 16 */
+    margin-left: 0.9375em;       /* 15px / 16 */ 
+    
 }
 
 
@@ -199,6 +200,11 @@ span {
 }
 
 @media (max-width: 1200px) {
+
+    main {
+        overflow-x: hidden;
+    }
+
     header {
         flex-direction: column;
         justify-content: center;
@@ -232,6 +238,7 @@ span {
     li {
         flex-direction: column;
         width: 80%;
+        
     }
 
     .li-one {
@@ -243,14 +250,14 @@ span {
     
     .li-two {
         align-self: center;
-        margin: 0 0 0 57px;
+        margin: 20px 0 0 57px;
         text-indent: 0;
         
     }
     
     .li-three {
         align-self: center;
-        margin: 0 0 0 57px;
+        margin: 20px 0 0 57px;
         text-indent: 0;
         
     }
@@ -289,11 +296,13 @@ span {
 
     ul {
         margin-top: 1.5em;
-        margin-right: 0;
+        
     }
 
     li {
         width: 80%;
+        margin: 0;
+        
         
     }
 }
