@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
@@ -43,7 +43,7 @@ header {
 h1 {
     font-size: 3.375em; /* 54 / 16 */
     color: var(--VeryDarkMagenta);
-    padding-right: 2em;
+    padding:0 2em 0 0;
     line-height: .92em;
     letter-spacing: -0.02777778em; /* -1.5px / 54 */
     
@@ -200,17 +200,11 @@ span {
 }
 
 @media (max-width: 1200px) {
-
-    main {
-        overflow-x: hidden;
-    }
-
+    
     header {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
-        margin: 0;
         
     }
 
@@ -225,6 +219,11 @@ span {
 
     .p1 {
         padding: 0 4.3em
+    }
+
+    ul {
+        margin:0;
+        padding: 0;
     }
 
     .star {
@@ -243,21 +242,21 @@ span {
 
     .li-one {
         align-self: center;
-        margin: 0 0 0 57px;
+        margin: 0;
         text-indent: 0;
         
     }
     
     .li-two {
         align-self: center;
-        margin: 20px 0 0 57px;
+        margin: 20px 0 0 0;
         text-indent: 0;
         
     }
     
     .li-three {
         align-self: center;
-        margin: 20px 0 0 57px;
+        margin: 20px 0 0 0;
         text-indent: 0;
         
     }
